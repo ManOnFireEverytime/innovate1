@@ -57,7 +57,7 @@ ul {
     #e1306c,
     #fd1d1d
   );
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
   font-weight: 700;
   font-size: 94px;
@@ -65,8 +65,8 @@ ul {
 
 .main-text h1 p {
   background-color: #b49caa;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
   font-weight: 700;
   font-size: 35px;
   padding-left: 40px;
@@ -90,7 +90,7 @@ ul {
   justify-content: center;
   align-items: center;
   background-color: #b49caa;
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   -webkit-text-fill-color: transparent;
 }
 /* .main-text h1,
