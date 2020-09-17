@@ -226,3 +226,58 @@ p {
 .lightbox-content a:hover::after {
   opacity: 0.5;
 }
+
+@media (max-width: 600px) {
+  .social {
+    display: none;
+  }
+  .logo {
+    left: 30px;
+    top: 30px;
+  }
+  .logo a {
+    font-size: 1.4rem;
+  }
+  .main-text {
+    overflow-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .main-text h1 {
+    font-size: 60px;
+  }
+  .main-text h1 p {
+    font-size: 20px;
+  }
+  .main-text h5,
+  span {
+    margin-left: -45px;
+  }
+  /* .main-text h5 span {
+    margin-left: -70px;
+  } */
+  /* .main-text h5 {
+    font-size: 12px;
+    margin-left: -22px;
+  }
+  .main-text h5 span {
+    font-size: 12px;
+    margin-left: 0px;
+  } */
+  .main-btn {
+    margin-left: 65px;
+  }
+  .product {
+    width: 88%;
+  }
+  .box {
+    margin: 20px 10px;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .social-footer {
+    display: flex;
+  }
+}
