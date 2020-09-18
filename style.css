@@ -101,7 +101,7 @@ ul {
   color: #b1aaae;
   font-size: 14px;
   top: 20px;
-  padding-right: 20px;
+  padding-right: 40px;
   left: -65%;
   /* transform: translateY(-50%);
   border-radius: 20px; */
@@ -336,6 +336,9 @@ p {
 @media (max-width: 600px) {
   .social {
     display: none;
+  }
+  .nav .nav-item a {
+    padding-right: 20px;
   }
   .logo {
     /* left: 30px;
