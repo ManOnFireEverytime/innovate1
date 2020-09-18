@@ -23,12 +23,85 @@ ul {
   background-position: center;
   background-repeat: no-repeat;
 }
+.main .bg-shapes div {
+  position: absolute;
+  opacity: 0.08;
+}
+.main .bg-shapes div:nth-child(1) {
+  height: 100px;
+  width: 100px;
+  top: 20%;
+  left: 20%;
+  background-color: #ffffff;
+  border-radius: 50%;
+  animation: shape 5s linear infinite;
+}
+.home-section .bg-shapes div:nth-child(3) {
+  height: 60px;
+  width: 60px;
+  top: 12%;
+  left: 90%;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  border-left: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  animation: shape2 7s linear infinite;
+}
+.main .bg-shapes div:nth-child(4) {
+  height: 200px;
+  width: 200px;
+  top: 0;
+  left: calc(100% - 200px);
+  background-color: #ffffff;
+  border-radius: 15%;
+  animation: shape3 10s linear infinite;
+}
+
+.main .bg-shapes div:nth-child(5) {
+  height: 200px;
+  width: 200px;
+  top: 40%;
+  left: calc(0% - 50px);
+  background-color: transparent;
+  border: 5px solid #ffffff;
+  animation: shape2 10s linear infinite;
+}
+
+@keyframes shape {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes shape2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes shape3 {
+  0%,
+  100% {
+    transform: scale(2.5);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
 .nav .nav-item a {
   position: relative;
   color: #b1aaae;
   font-size: 14px;
   top: 20px;
-  padding-right: 50px;
+  padding-right: 20px;
   left: -65%;
   /* transform: translateY(-50%);
   border-radius: 20px; */
@@ -268,6 +341,22 @@ p {
     /* left: 30px;
     top: 30px; */
     display: none;
+  }
+  /* .bg-shapes {
+    display: none;
+  } */
+  .main .bg-shapes div:nth-child(1),
+  .main .bg-shapes div:nth-child(5) {
+    display: none;
+  }
+  .main .bg-shapes div:nth-child(4) {
+    height: 50px;
+    width: 50px;
+    top: 0;
+    left: calc(100% - 75px);
+    background-color: #ffffff;
+    border-radius: 15%;
+    animation: shape3 10s linear infinite;
   }
   .logo a {
     font-size: 1.4rem;
