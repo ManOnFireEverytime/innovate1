@@ -83,7 +83,7 @@ ul {
 }
 
 .main-text h1 {
-  background: -webkit-linear-gradient(
+  /* background: -webkit-linear-gradient(
     45deg,
     #405de6,
     #5851db,
@@ -91,9 +91,74 @@ ul {
     #c13584,
     #e1306c,
     #fd1d1d
-  );
+  );*/
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-image: -moz-linear-gradient(
+    to top left,
+    #708db5,
+    #d789d7,
+    cyan,
+    #9d65c9,
+    #e94560,
+    #e94560,
+    #66bfbf,
+    purple,
+    #66bfbf,
+    #66bfbf,
+    purple
+  ); /* FF 3.6+ */
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #000000),
+    color-stop(100%, #ffffff)
+  ); /* Safari 4+, Chrome 2+ */
+  background-image: -webkit-linear-gradient(
+    to top left,
+    #708db5,
+    #d789d7,
+    cyan,
+    #9d65c9,
+    #e94560,
+    #e94560,
+    #66bfbf,
+    purple,
+    #66bfbf,
+    #66bfbf,
+    purple
+  ); /* Safari 5.1+, Chrome 10+ */
+  background-image-image: -o-linear-gradient(
+    to top left,
+    #708db5,
+    #d789d7,
+    cyan,
+    #9d65c9,
+    #e94560,
+    #e94560,
+    #66bfbf,
+    purple,
+    #66bfbf,
+    #66bfbf,
+    purple
+  ); /* Opera 11.10 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#ffffff'); /* IE6 & IE7 */
+  -ms-filter-image: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#ffffff')"; /* IE8+ */
+  background-image: linear-gradient(
+    to top left,
+    #708db5,
+    #d789d7,
+    cyan,
+    #9d65c9,
+    #e94560,
+    #e94560,
+    #66bfbf,
+    purple,
+    #66bfbf,
+    #66bfbf,
+    purple
+  );
   font-weight: 700;
   font-size: 94px;
 }
